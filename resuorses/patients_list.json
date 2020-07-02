@@ -1,0 +1,32 @@
+{
+  "1": {
+    "first_name": "david",
+    "last_name": "haci tov",
+    "id": "123456",
+    "drugs_list": {
+      "1": {
+        "drug_name": "acmol",
+        "amount": 2
+      },
+      "2": {
+        "drug_name": "antibotica",
+        "amount": 1
+      }
+    }
+  },
+  "2": {
+    "first_name": "moshe",
+    "last_name": "moshe",
+    "id": "12345",
+    "drugs_list": {
+      "1": {
+        "drug_name": "acmol",
+        "amount": 2
+      },
+      "2": {
+        "drug_name": "antibotica",
+        "amount": 1
+      }
+    }
+  }
+}
