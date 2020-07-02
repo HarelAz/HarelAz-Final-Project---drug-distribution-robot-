@@ -1,6 +1,6 @@
 from art import tprint
 import os
-from main_code.con import * #as #conf
+from main_code.con import *
 from main_code.moduless import *
 from main_code.homing import *
 from Testing.Testing_Go_To import *
@@ -29,15 +29,12 @@ def testing_menu():
         if menu_choice == len(testing_menu_list):
             break
         elif menu_choice == 1:
+            current_position = homing()
 
-            T =  homing()
-            current_position_Z = T[0]
-            current_position_A = T[1]
         elif menu_choice == 2:
 
-            T = Testing_Go_To(current_position_Z, current_position_A)
-            current_position_Z = T[0]
-            current_position_A = T[1]
+             Testing_Go_To(current_position)
+
         elif menu_choice == 3:
             continue
 
@@ -86,6 +83,8 @@ def main_menu():
         menu_choice = print_menu(main_menu_list)
 
         if menu_choice == len(main_menu_list):
+            homing()
+            disable_motors()
             break
         elif menu_choice == 1:
             testing_menu()

@@ -72,6 +72,10 @@ BLUE_PIN = 17   # BLUE Led GPIO Pin
 Variable
 '''
 
+#current_position = [Z, A]
+current_position = [0, 0]
+
+
 
 
 destinastion_A = 0

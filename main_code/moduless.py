@@ -5,8 +5,12 @@
     from code import config
     from code import homing
 '''
+
+
 # Importing Modules
 from main_code.con import *
+from main_code.motor_status import *
+
 from main_code.SERVO_ANGLE import *
 import RPi.GPIO as GPIO
 GPIO.setwarnings(False)
