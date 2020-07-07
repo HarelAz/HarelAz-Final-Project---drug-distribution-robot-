@@ -1,6 +1,6 @@
 from art import tprint
 import os
-from main_code.con import *
+from main_code.confi import *
 from main_code.moduless import *
 from main_code.homing import *
 from Testing.Testing_Go_To import *

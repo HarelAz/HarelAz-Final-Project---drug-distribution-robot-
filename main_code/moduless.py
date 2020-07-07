@@ -8,7 +8,7 @@
 
 
 # Importing Modules
-from main_code.con import *
+from main_code.confi import *
 from main_code.motor_status import *
 
 from main_code.SERVO_ANGLE import *

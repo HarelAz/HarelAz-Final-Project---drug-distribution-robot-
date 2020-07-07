@@ -1,4 +1,4 @@
-from main_code.con import * #as #conf
+from main_code.confi import * #as #conf
 from main_code.moduless import *
 
 
