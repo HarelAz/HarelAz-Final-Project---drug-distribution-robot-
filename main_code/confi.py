@@ -75,17 +75,14 @@ Variable
 #current_position = [Z, A]
 current_position = [0, 0]
 
-
-
-
 destinastion_A = 0
 delay_home_A = 0.0005
 delay_Go_to_A = 0.001
-
+No_Of_Cells_A = 3
 
 destinastion_Z = 0
 delay_home_Z = 0.00015
 delay_Go_To_Z = 0.00015
-
+No_Of_Cells_Z = 20
 
 

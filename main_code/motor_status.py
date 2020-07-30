@@ -2,11 +2,9 @@ from RPi import GPIO
 from main_code.confi import *
 from main_code.moduless import *
 
-
 def disable_motors():
     GPIO.output(16, GPIO.HIGH)
     GPIO.output(13, GPIO.HIGH)
-
 
 def enable_motors():
     GPIO.output(16, GPIO.LOW)
