@@ -1,13 +1,6 @@
 from main_code.confi import *
 from main_code.moduless import *
 
-from time import sleep
-import RPi.GPIO as GPIO
-from time import sleep
-
-GPIO.setwarnings(False)
-
-
 def calibrate_A():
     Home_A()
 
@@ -49,5 +42,3 @@ def calibrate_Z():
     print("The step per cell is:", Motor_Z_steppercell)
     Home_Z()
     return (Motor_Z_steppercell)
-
-
