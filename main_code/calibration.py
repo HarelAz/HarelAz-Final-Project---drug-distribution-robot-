@@ -30,9 +30,9 @@ def calibrate_Z():
     GPIO.output(DIR_Z, not MOTOR_Z_DIR_CW)
     while True:
         i = GPIO.input(endstop_Z_Pin)  # read status of pin/port and assign to variable i
-        GPIO.output(STEP, GPIO.HIGH)
+        GPIO.output(STEP_Z, GPIO.HIGH)
         sleep(delay_home_Z)
-        GPIO.output(STEP, GPIO.LOW)
+        GPIO.output(STEP_Z, GPIO.LOW)
         sleep(delay_home_Z)
         step_count = step_count + 1
         if (i == 1):

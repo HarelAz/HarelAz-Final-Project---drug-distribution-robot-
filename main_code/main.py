@@ -43,6 +43,24 @@ def testing_menu():
 
         clear_screen()
 
+calibration_menu_list = ['Welcome to calibration main menu: \n please enter you\'re choice:\n',
+                  'calibration Z axis',
+                  'calibration A axis']
+
+def calibration_menu():
+    clear_screen()
+    while True:
+        menu_choice = print_menu(calibration_menu_list)
+
+        if menu_choice == len(main_menu_list):
+            break
+        elif menu_choice == 1:
+            calibrate_Z()
+        elif menu_choice == 2:
+            calibrate_A()
+
+        clear_screen()
+
 
 operation_menu_list = ['Welcome to Medicine distribution operation: \n please enter you\'re choice:\n',
                        'Machine ON',
@@ -68,6 +86,10 @@ def operation_menu():
         elif menu_choice == 3:
             continue
         elif menu_choice == 4:
+            continue
+        elif menu_choice == 5:
+
+
             continue
 
         clear_screen()
