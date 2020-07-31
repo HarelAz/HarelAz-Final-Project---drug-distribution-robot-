@@ -30,7 +30,7 @@ def testing_menu():
             break
         elif menu_choice == 1:
 
-            T =  homing()
+            T = homing()
             current_position_Z = T[0]
             current_position_A = T[1]
         elif menu_choice == 2:
