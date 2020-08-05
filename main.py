@@ -58,8 +58,6 @@ def operation_menu():
             break
         elif menu_choice == 1:
             homing()
-            print(current_position_A)
-            print(current_position_Z)
         elif menu_choice == 2:
             continue
         elif menu_choice == 3:
