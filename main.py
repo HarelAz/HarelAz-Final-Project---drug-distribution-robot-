@@ -10,7 +10,7 @@ from Testing.Testing_Go_To import *
 testing_menu_list = ['Welcome to Medicine distribution testing: \n please enter you\'re choice:\n',
                      'testing homing',
                      'testing go to Position',
-                     'testing engine 3']
+                     'testing number of pills']
 
 
 def clear_screen():
@@ -36,7 +36,8 @@ def testing_menu():
              Testing_Go_To(current_position)
 
         elif menu_choice == 3:
-            continue
+            NumOfPills = checking_number_of_pills()
+            print(NumOfPills)
 
         clear_screen()
 

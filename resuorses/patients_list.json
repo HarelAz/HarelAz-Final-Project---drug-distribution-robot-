@@ -1,30 +1,30 @@
 {
   "1": {
     "first_name": "david",
-    "last_name": "haci tov",
-    "id": "123456",
+    "last_name": "Cohen",
+    "id": "20945186",
     "drugs_list": {
       "1": {
-        "drug_name": "acmol",
+        "drug_name": "Darifenacin",
         "amount": 2
       },
       "2": {
-        "drug_name": "antibotica",
+        "drug_name": "Erythromycin",
         "amount": 1
       }
     }
   },
   "2": {
-    "first_name": "moshe",
-    "last_name": "moshe",
-    "id": "12345",
+    "first_name": "Shira",
+    "last_name": "Levi",
+    "id": "26869574",
     "drugs_list": {
       "1": {
-        "drug_name": "acmol",
-        "amount": 2
+        "drug_name": "Lovastatin",
+        "amount": 1
       },
       "2": {
-        "drug_name": "antibotica",
+        "drug_name": "Buspiron",
         "amount": 1
       }
     }
