@@ -16,7 +16,7 @@ endstop_A_Pin = 6   # endstop1 GPIO Pin
 A_MIN_ENDSTOP_INVERTING = 1 # set to 0 to invert the logic of the endstop.
 MOTOR_A_DIR_CW = 1     # Clockwise Rotation
 #CCW = 0    # Counterclockwise Rotation
-Motor_A_steppercell = 470    #step per cell
+Motor_A_steppercell = 469    #step per cell
 
 #PinMod  - set a port/pin as an input/output
 GPIO.setup(EN_A, GPIO.OUT)
@@ -37,7 +37,7 @@ endstop_Z_Pin = 5   # endstop1 GPIO Pin
 #Constant
 Z_MIN_ENDSTOP_INVERTING = 1 # set to 0 to invert the logic of the endstop.
 MOTOR_Z_DIR_CW = 0     # Clockwise Rotation
-Motor_Z_steppercell = 6000    #step per cell
+Motor_Z_steppercell = 6863    #step per cell
 
 
 #PinMod  - set a port/pin as an input/output
@@ -78,11 +78,11 @@ current_position = [0, 0]
 destinastion_A = 0
 delay_home_A = 0.0005
 delay_Go_to_A = 0.001
-No_Of_Cells_A = 3
+No_Of_Cells_A = 20
 
 destinastion_Z = 0
 delay_home_Z = 0.00015
 delay_Go_To_Z = 0.00015
-No_Of_Cells_Z = 20
+No_Of_Cells_Z = 4
 
 

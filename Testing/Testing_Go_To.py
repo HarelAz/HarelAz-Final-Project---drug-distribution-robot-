@@ -1,4 +1,3 @@
-from main_code.homing import *
 from main_code.GoTo import *
 
 def Testing_Go_To(current_position):

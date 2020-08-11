@@ -3,7 +3,6 @@ import RPi.GPIO as GPIO
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 from time import sleep
-import con
 
 
 def Home_Servo_1():

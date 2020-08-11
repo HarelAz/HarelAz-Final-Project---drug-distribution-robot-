@@ -60,13 +60,13 @@ if __name__ == "__main__":
     # print("result3 image_compare: ", result3)
     # print("result3 image_compare: ", result3)
 
-    # save_pic_to_path(take_pic_from_cam(), "resuorses/test16.jpg")
+    # save_pic_to_path(take_pic_from_cam(), "resuorses/test7.jpg")
 
-    image_list = ["test10.jpg", "test11.jpg", "test12.jpg", "test13.jpg", "test14.jpg", "test15.jpg", "test16.jpg",
+    image_list = ["test7.jpg","test10.jpg", "test11.jpg", "test12.jpg", "test13.jpg", "test14.jpg", "test15.jpg", "test16.jpg",
                   "test17.jpg"]
 
     obj = ImageProcessing()
-    obj.load_image("resuorses/" + image_list[7])
+    obj.load_image("resuorses/" + image_list[0])
     obj.gray_image()
 
     circles = cv2.HoughCircles(obj._gray_image, cv2.HOUGH_GRADIENT, dp=1.5, minDist=50, param1=20, param2=0.9,
@@ -102,5 +102,5 @@ if __name__ == "__main__":
             cv2.circle(output, (x, y), d, (0, 255, 0), 2)
 
     ImageProcessing.display_image(output)
-    ImageProcessing.display_image(obj._regular_image)
-    ImageProcessing.display_image(obj._gray_image)
+    #ImageProcessing.display_image(obj._regular_image)
+    #ImageProcessing.display_image(obj._gray_image)

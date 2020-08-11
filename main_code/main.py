@@ -1,11 +1,9 @@
-from art import tprint
 import os
+
+from art import tprint
 from main_code.conf import *
-from main_code.moduless import *
-from main_code.homing import *
+
 from Testing.Testing_Go_To import *
-
-
 
 testing_menu_list = ['Welcome to Medicine distribution testing: \n please enter you\'re choice:\n',
                      'testing homing',

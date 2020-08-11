@@ -1,5 +1,4 @@
-from RPi import GPIO
-from main_code.confi import *
+#from RPi import GPIO
 from main_code.moduless import *
 
 def disable_motors():

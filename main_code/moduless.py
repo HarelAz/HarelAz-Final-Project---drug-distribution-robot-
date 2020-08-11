@@ -8,20 +8,18 @@
 
 
 # Importing Modules
-from main_code.confi import *
-from main_code.motor_status import *
-from main_code.calibration import *
 
-from main_code.SERVO_ANGLE import *
 import RPi.GPIO as GPIO
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
-from time import sleep
-import numpy as np
-from squid import *
+from art import tprint
+from time import *
 #import pyqrcode
 #from pyzbar.pyzbar import decode
 #from PIL import Image
-#import cv2
+
+import cv2
 
 
+from main_code.homing import *
+from main_code.NumberOfPills import *
