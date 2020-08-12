@@ -1,5 +1,5 @@
  {
-  "1":
+    "1":
     {
     "drug_name": "Darifenacin",
     "id": "123456",
@@ -11,7 +11,7 @@
     {
     "drug_name": "Erythromycin",
     "id": "123456",
-    "capsul_location_A": "1",
+    "capsul_location_A": "5",
     "capsul_location_Z": "2",
     "invetory": 50
     },

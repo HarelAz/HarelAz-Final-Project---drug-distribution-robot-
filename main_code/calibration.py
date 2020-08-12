@@ -50,5 +50,6 @@ def calibrate_Z():
     return (Motor_Z_steppercell)
 
 
+######################### Testing the Calibration function #########################
 if __name__ == "__main__":
     calibrate_A()
