@@ -26,13 +26,14 @@ def pill_by_number(selected_patient, current_position):
 
 #    for drug_number in patients_list:
 
-    drug_amount = len(patients_list[selected_patient]['drugs_list'])
+    selected_patient_str = str(selected_patient)
+    drug_amount = len(patients_list[selected_patient_str]['drugs_list'])
     print(drug_amount)
     #print(patients_list[selected_patient]['drugs_list'][drug_number]['drug_name'])
 
     for drug_number in range(1, drug_amount+1):
-        drug_name = patients_list[selected_patient]['drugs_list'][str(drug_number)]['drug_name']
-        drug_sum = patients_list[selected_patient]['drugs_list'][str(drug_number)]['amount']
+        drug_name = patients_list[selected_patient_str]['drugs_list'][str(drug_number)]['drug_name']
+        drug_sum = patients_list[selected_patient_str]['drugs_list'][str(drug_number)]['amount']
         pill_out(drug_name, drug_sum, current_position)
 
 
@@ -47,7 +48,7 @@ def print_patients_list():
 
 def pill_by_name(current_position):
     print_patients_list()
-    selected_patient = (input("What is the patients number?"))
+    selected_patient = int(input("What is the patients number?"))
     #print(selected_patient)
     pill_by_number(selected_patient, current_position)
 

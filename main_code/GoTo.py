@@ -5,7 +5,9 @@ from main_code.moduless import *
 ######################### Function that move the axis to the wanted Z position #########################
 def Goto_Z(destinastion_Z, current_position_Z):
     # Calculate the number of steps to the desired position from the current position
-    step_count_Z = destinastion_Z *Motor_Z_steppercell - int(current_position_Z)
+
+
+    step_count_Z = int(destinastion_Z) *Motor_Z_steppercell - int(current_position_Z)
 
     if (step_count_Z > 0): # Move the Z axis in positive direction
         GPIO.output(DIR_Z, not MOTOR_Z_DIR_CW)
@@ -30,7 +32,7 @@ def Goto_Z(destinastion_Z, current_position_Z):
 ######################### Function that move the axis to the wanted A position #########################
 def Goto_A(destinastion_A, current_position_A):
     # Calculate the number of steps to the desired position from the current position
-    step_count_A = destinastion_A * Motor_A_steppercell - current_position_A
+    step_count_A = int(destinastion_A) * Motor_A_steppercell - current_position_A
 
     if (step_count_A > 0): # Move the a axis in positive direction
         GPIO.output(DIR_A, not MOTOR_A_DIR_CW)
