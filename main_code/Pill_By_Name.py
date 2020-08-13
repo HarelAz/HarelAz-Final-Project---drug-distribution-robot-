@@ -35,6 +35,8 @@ def pill_by_number(selected_patient, current_position):
         drug_name = patients_list[selected_patient_str]['drugs_list'][str(drug_number)]['drug_name']
         drug_sum = patients_list[selected_patient_str]['drugs_list'][str(drug_number)]['amount']
         pill_out(drug_name, drug_sum, current_position)
+    go_to(0, 0, current_position)
+
 
 
 def print_patients_list():

@@ -52,13 +52,15 @@ Servo 1 is responsible for
 '''
 Servo_1_Pin = 24
 GPIO.setup(Servo_1_Pin, GPIO.OUT)
-pwm=GPIO.PWM(Servo_1_Pin, 50)
+pwm1=GPIO.PWM(Servo_1_Pin, 50)
+pwm1.start(0)
+
 '''
 Servo 2 is responsible for 
 '''
 Servo_2_Pin = 23
 GPIO.setup(Servo_2_Pin, GPIO.OUT)
-pwm=GPIO.PWM(Servo_2_Pin, 50)
+pwm2=GPIO.PWM(Servo_2_Pin, 50)
 '''
 RGB Led
 '''

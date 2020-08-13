@@ -26,3 +26,4 @@ from main_code.NumberOfPills import *
 from main_code.Pill_By_Name import *
 from main_code.pill_out import *
 from main_code.GoTo import *
+from main_code.SERVO_ANGLE import *
