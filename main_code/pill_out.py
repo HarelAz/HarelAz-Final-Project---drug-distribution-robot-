@@ -11,7 +11,7 @@ def load_json(file_name, path="resources/"):
 
 def load_json_file():
     # load json file intro dict variable
-    drugs_list = load_json("drugs_list.json", "../resuorses/")  # load json function return dict
+    drugs_list = load_json("drugs_list.json", "./resuorses/")  # load json function return dict
     return drugs_list
 
 
@@ -27,6 +27,7 @@ def pill_out(drug_name, drug_sum, current_position):
             #print(destinastion_A, destinastion_Z)
             go_to(destinastion_Z, destinastion_A, current_position)
             for drug_num in range(1, drug_sum + 1):
+
                 servo_1_out()
                 sleep(1)
 #return current_position

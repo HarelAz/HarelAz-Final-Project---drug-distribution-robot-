@@ -10,7 +10,7 @@ def load_json(file_name, path="resources/"):
 
 def load_json_file():
     # load json file intro dict variable
-    patients_list = load_json("patients_list.json", "../resuorses/")  # load json function return dict
+    patients_list = load_json("patients_list.json", "./resuorses/")  # load json function return dict
     return patients_list
 
 
@@ -57,4 +57,5 @@ def pill_by_name(current_position):
 
 
 if __name__ == "__main__":
-    pill_by_name()
+    current_position = [0, 0]
+    pill_by_name(current_position)
