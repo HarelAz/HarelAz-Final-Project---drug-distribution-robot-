@@ -3,6 +3,7 @@ from main_code.moduless import *
 from main_code.confi import *
 from main_code.GoTo import *
 from main_code.SERVO_ANGLE import *
+from pill_detector import *
 
 def load_json(file_name, path="resources/"):
     with open(path + file_name, 'r') as json_file:
@@ -27,9 +28,10 @@ def pill_out(drug_name, drug_sum, current_position):
             #print(destinastion_A, destinastion_Z)
             go_to(destinastion_Z, destinastion_A, current_position)
             for drug_num in range(1, drug_sum + 1):
-
+                print(amount_of_pills())
                 servo_1_out()
-                sleep(1)
+                sleep(2)
+                print(amount_of_pills())
 #return current_position
 
 if __name__ == "__main__":

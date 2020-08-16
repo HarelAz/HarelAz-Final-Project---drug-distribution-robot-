@@ -33,6 +33,7 @@ def save_pic_to_path(img, path):
 
 
 def amount_of_pills():
+    save_pic_to_path(take_pic_from_cam(), "/home/pi/PycharmProjects/HarelAz-Final-Project---drug-distribution-robot-/resuorses/temp.jpg")
     # construct the argument parse and parse the arguments
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", default="",
