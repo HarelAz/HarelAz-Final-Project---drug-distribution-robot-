@@ -2,9 +2,11 @@
 from main_code.confi import *
 from main_code.motor_status import *
 
+
 ######################### Function for servo 1 homing #########################
 def Home_Servo_1():
     Servo_1_SetAngle(0)
+
 
 ######################### Function for A axis homing #########################
 def Home_A():

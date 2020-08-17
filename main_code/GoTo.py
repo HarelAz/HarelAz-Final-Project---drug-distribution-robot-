@@ -52,23 +52,24 @@ def Goto_A(destinastion_A, current_position_A):
 
 
 ######################### Go_to function #########################
-def go_to(destinastion_Z, destinastion_A, current_position):
+# this function move the arm to the wanted destination in A axis and Z axis
+def go_to(destination_Z, destination_A, current_position):
     global current_position_Z
     global current_position_A
     current_position_Z = current_position[0]
     current_position_A = current_position[1]
-    if (destinastion_Z *Motor_Z_steppercell != current_position_Z):
+    if (destination_Z *Motor_Z_steppercell != current_position_Z):
         current_position[1] = Goto_A(0, current_position_A)
         current_position_A = current_position[1]
-    current_position[0] = Goto_Z(destinastion_Z, current_position_Z)
-    current_position[1] = Goto_A(destinastion_A, current_position_A)
+    current_position[0] = Goto_Z(destination_Z, current_position_Z)
+    current_position[1] = Goto_A(destination_A, current_position_A)
     return current_position
 
 
 ######################### Testing the Go_to function #########################
 if __name__ == "__main__":
-    destinastion_Z = 1
-    destinastion_A = 2
+    destination_Z = 1
+    destination_A = 2
     current_position_Z = 0
     current_position_A = 0
-    go_to(destinastion_Z, destinastion_A)
+    go_to(destination_Z, destination_A)

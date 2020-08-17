@@ -1,11 +1,11 @@
-'''def importing():
+'''
+    def importing():
     #Importing File
     from code import GoTo
     from code import Servo_1
     from code import config
     from code import homing
 '''
-
 
 # Importing Modules
 import json
@@ -19,7 +19,6 @@ from time import *
 #from PIL import Image
 
 import cv2
-
 
 from main_code.homing import *
 from main_code.NumberOfPills import *

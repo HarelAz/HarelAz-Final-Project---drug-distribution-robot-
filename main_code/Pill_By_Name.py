@@ -4,18 +4,23 @@ from main_code.confi import *
 from main_code.pill_out import *
 
 
-######################### Function for open json file #########################
+######################### load_json function #########################
+# Function for open json file
 def load_json(file_name, path="resources/"):
     with open(path + file_name, 'r') as json_file:
         return json.load(json_file)
 
-######################### Function for loading the json file into dict variable #########################
+
+######################### load_json_file function #########################
+# Function for loading the json file into dict variable
 def load_json_file():
     # load json file intro dict variable
     patients_list = load_json("patients_list.json", "./resuorses/")  # load json function return dict
     return patients_list
 
-######################### Function for loading patient information #########################
+
+######################### pill_by_number function #########################
+# Function for loading patient information
 def pill_by_number(selected_patient, current_position):
     patients_list = load_json_file()
     selected_patient_str = str(selected_patient)
@@ -31,7 +36,8 @@ def pill_by_number(selected_patient, current_position):
     go_to(0, 0, current_position)
 
 
-######################### Function for printing patient list #########################
+######################### print_patients_list function #########################
+# Function for printing patient list
 def print_patients_list():
     patients_list = load_json_file()
     # loop over dict keys patient list drugs_list
@@ -39,13 +45,14 @@ def print_patients_list():
         print(patient, ")", patients_list[patient]['first_name'], patients_list[patient]['last_name'],
               patients_list[patient]['id'])
 
-######################### Function for selcting patient #########################
+
+######################### pill_by_name function #########################
+# Function for selcting patient
 def pill_by_name(current_position):
     print_patients_list()
     selected_patient = int(input("What is the patients number?"))
-    #print(selected_patient)
+    # print(selected_patient)
     pill_by_number(selected_patient, current_position)
-
 
 
 if __name__ == "__main__":

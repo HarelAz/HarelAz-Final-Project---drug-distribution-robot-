@@ -29,7 +29,7 @@ def print_menu(menu_items):
     return menu_choice
 
 ######################### testing_menu_list #########################
-testing_menu_list = ['Welcome to Medicine distribution testing: \n please enter you\'re choice:\n',
+testing_menu_list = ['Welcome to Medicine distribution testing: \nplease enter you\'re choice:\n',
                      'testing homing',
                      'testing go to Position',
                      'testing number of pills']

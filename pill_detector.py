@@ -17,21 +17,22 @@ def midpoint(ptA, ptB):
     return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
 
 
-
-
-
+######################### take_pic_from_cam function #########################
+# Function for take picture from camera
 def take_pic_from_cam():
     cam = cv2.VideoCapture(0)  # 0 -> index of camera
     s, img = cam.read()
-
     return img
 
 
+######################### save_pic_to_path function #########################
+# Function for save picture in path
 def save_pic_to_path(img, path):
     cv2.imwrite(path, img)
 
 
-################## Identifies the number of pills in cup using image recognition #######################
+################## amount_of_pills function #######################
+# Function for identifies the number of pills in cup using image recognition
 def amount_of_pills():
     save_pic_to_path(take_pic_from_cam(), "/home/pi/PycharmProjects/HarelAz-Final-Project---drug-distribution-robot-/resuorses/temp.jpg")
     # construct the argument parse and parse the arguments

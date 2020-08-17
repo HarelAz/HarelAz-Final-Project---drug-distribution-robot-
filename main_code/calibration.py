@@ -3,7 +3,8 @@ from main_code.homing import *
 from main_code.moduless import  *
 from main_code.confi import *
 
-######################### Function for A axis calibration #########################
+######################### calibrate_A function #########################
+# Function for A axis calibration
 def calibrate_A():
     homing()
     step_count = 0
@@ -26,7 +27,8 @@ def calibrate_A():
     return (Motor_A_steppercell)
 
 
-######################### Function for Z axis calibration #########################
+######################### calibrate_A function #########################
+# Function for Z axis calibration
 def calibrate_Z():
     homing()
 
@@ -50,6 +52,6 @@ def calibrate_Z():
     return (Motor_Z_steppercell)
 
 
-######################### Testing the Calibration function #########################
+######################### Testing the Calibration #########################
 if __name__ == "__main__":
     calibrate_A()

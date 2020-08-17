@@ -4,9 +4,6 @@ from main_code.moduless import *
 from time import sleep
 
 
-
-
-
 ######################### Servo_1_SetAngle function #########################
 # This function move the servo to desired angle that move the linear actuator
 def Servo_1_SetAngle(angle):
