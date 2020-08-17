@@ -9,14 +9,19 @@ def load_json(file_name, path="resources/"):
     with open(path + file_name, 'r') as json_file:
         return json.load(json_file)
 
-
-
 def load_json_file():
     # load json file intro dict variable
     drugs_list = load_json("drugs_list.json", "./resuorses/")  # load json function return dict
     return drugs_list
 
 
+def load_json_w(file_name, path="resources/"):
+    with open(path + file_name, 'w') as json_file:
+        return json.dump(json_file)
+
+def load_json_file_w():
+    drugs_list = load_json_w("drugs_list.json", "./resuorses/")  # load json function return dict
+    return drugs_list
 
 
 
@@ -29,13 +34,13 @@ def pill_out(drug_name, drug_sum, current_position):
             #print(destinastion_A, destinastion_Z)
             go_to(destinastion_Z, destinastion_A, current_position)
             for drug_num in range(1, drug_sum + 1):
-                print(amount_of_pills())
+                #print(amount_of_pills())
                 servo_1_out()
                 new_inventory = drugs_list[drug]['invetory']
                 new_inventory -= 1
                 drugs_list[drug]['invetory'] = new_inventory
-                print(new_inventory )
                 sleep(2)
+                print(new_inventory)
                 print(amount_of_pills())
 #return current_position
 
