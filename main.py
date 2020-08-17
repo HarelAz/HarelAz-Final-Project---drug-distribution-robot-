@@ -50,7 +50,7 @@ def testing_menu():
              Testing_Go_To(current_position)
 
         elif menu_choice == 3:
-            NumOfPills = checking_number_of_pills()
+            NumOfPills = amount_of_pills()
             print(NumOfPills)
 
         clear_screen()
@@ -105,6 +105,7 @@ def operation_menu():
             continue
         elif menu_choice == 6:
             disable_motors()
+            break
 
         clear_screen()
 

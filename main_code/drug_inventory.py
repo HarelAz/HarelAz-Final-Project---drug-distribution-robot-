@@ -3,13 +3,13 @@ from main_code.moduless import  *
 from main_code.confi import *
 
 
-
+######################### Function for open json file #########################
 def load_json(file_name, path="resources/"):
     with open(path + file_name, 'r') as json_file:
         return json.load(json_file)
 
 
-
+######################### Function for loading the json file into dict variable #########################
 def load_json_file():
     # load json file intro dict variable
     drugs_list = load_json("drugs_list.json", "./resuorses/")  # load json function return dict

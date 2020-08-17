@@ -31,7 +31,7 @@ def save_pic_to_path(img, path):
     cv2.imwrite(path, img)
 
 
-
+################## Identifies the number of pills in cup using image recognition #######################
 def amount_of_pills():
     save_pic_to_path(take_pic_from_cam(), "/home/pi/PycharmProjects/HarelAz-Final-Project---drug-distribution-robot-/resuorses/temp.jpg")
     # construct the argument parse and parse the arguments
@@ -147,7 +147,7 @@ def amount_of_pills():
     # show the output image
     cv2.imshow("Image", orig)
     cv2.imshow("Image2", orig2)
-    print(num_of_pill)
+    #print(num_of_pill)
     cv2.waitKey(0)
     return num_of_pill
 

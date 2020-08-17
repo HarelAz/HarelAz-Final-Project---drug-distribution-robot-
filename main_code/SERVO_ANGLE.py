@@ -18,9 +18,11 @@ def Servo_1_SetAngle(angle):
     pwm1.ChangeDutyCycle(0)
 
 
+######################### servo_1_out function #########################
+# This function move the linear actuator all the way out (180) and brings it back inside (0)
 def servo_1_out():
     pwm1.start(0)
-    delay = 0
+    delay = 0.5
     Servo_1_SetAngle(0)
     sleep(delay)
     Servo_1_SetAngle(180)
