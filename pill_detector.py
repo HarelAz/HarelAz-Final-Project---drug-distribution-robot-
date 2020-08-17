@@ -76,7 +76,7 @@ def amount_of_pills():
     num_of_pill = 0
     for c in cnts:
         # if the contour is not sufficiently large, ignore it
-        if cv2.contourArea(c) < 100 or cv2.contourArea(c) > 10000:
+        if cv2.contourArea(c) < 150 or cv2.contourArea(c) > 10000:
             continue
         num_of_pill+=1
         ellipse = cv2.fitEllipse(c)

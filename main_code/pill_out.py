@@ -10,6 +10,7 @@ def load_json(file_name, path="resources/"):
         return json.load(json_file)
 
 
+
 def load_json_file():
     # load json file intro dict variable
     drugs_list = load_json("drugs_list.json", "./resuorses/")  # load json function return dict
@@ -30,6 +31,10 @@ def pill_out(drug_name, drug_sum, current_position):
             for drug_num in range(1, drug_sum + 1):
                 print(amount_of_pills())
                 servo_1_out()
+                new_inventory = drugs_list[drug]['invetory']
+                new_inventory -= 1
+                drugs_list[drug]['invetory'] = new_inventory
+                print(new_inventory )
                 sleep(2)
                 print(amount_of_pills())
 #return current_position

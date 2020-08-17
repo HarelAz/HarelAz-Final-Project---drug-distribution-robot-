@@ -1,1 +1,25 @@
 opencv-python
+
+
+
+# import the necessary packages
+from scipy.spatial import distance as dist
+from imutils import perspective
+from imutils import contours
+import numpy as np
+import argparse
+import imutils
+import cv2
+
+
+# Importing Modules
+import json
+import RPi.GPIO as GPIO
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+from art import tprint
+from time import *
+#import pyqrcode
+#from pyzbar.pyzbar import decode
+#from PIL import Image
+

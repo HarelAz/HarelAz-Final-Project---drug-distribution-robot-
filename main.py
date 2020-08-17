@@ -95,14 +95,17 @@ def operation_menu():
         elif menu_choice == 1:
             homing()
         elif menu_choice == 2:
-            continue
+            print_patients_list()
         elif menu_choice == 3:
-            continue
+            View_drug_inventory()
         elif menu_choice == 4:
             pill_by_name(current_position)
 
         elif menu_choice == 5:
             continue
+        elif menu_choice == 6:
+            disable_motors()
+
         clear_screen()
 
 ######################### main_menu_list #########################
